@@ -18,6 +18,13 @@
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
 }
+
+@media only screen and (max-width: 700px) {
+    #author {
+        display: none;
+    }
+}
+
 .section-box-eleven {
         background: radial-gradient(#6e6e6e,#2f2f2f);
         background: -webkit-radial-gradient(#6e6e6e,#2f2f2f);
