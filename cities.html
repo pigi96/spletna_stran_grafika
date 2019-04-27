@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Photography</title>
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
     <a href="index.html">Home</a>
-    ________________
+    <a>________________</a>
     <a href="cities.html">Citites</a>
     <a href="travel.html">Travel</a>
     <a href="animals.html">Animals</a>
@@ -26,31 +26,69 @@
 </div>
 
 
-
+<div id="scroller">
+    <a style="font-size:30px;cursor:pointer;color:white;padding-left:20px" onclick="openNav()">&#9776; Gallery</a>
+</div>
 
 <script>
 function openNav() {
   document.getElementById("myNav").style.width = "30%";
+  $('#overlay, #overlay-back').fadeIn(500);
 }
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+  $('#overlay, #overlay-back').fadeOut(500);
 }
 
-$(window).scroll(function () {
-    if ($(window).scrollTop() >= 0) {
-        $('#scroller').css('top', $(window).scrollTop());
-    }
-}
-);
 </script>
 
-<div id="scroller">
-    <span style="font-size:30px;cursor:pointer;color:white;padding-left:20px" onclick="openNav()">&#9776; Gallery</span>
+<div id="overlay-back"></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 padding-0">
+      <div class="overlay-symbol-up">&#10806;</div>
+      <img class="img-scale" src="images/cities/city2.jpg"></img>
+      <div class="trolldiv section-box-eleven">
+        <figure style="background-color:#7E9093;">It's part of an old city that is being continiously restored.</figure>
+      </div>
+    </div>
+     <div class="col-lg-6 padding-0">
+      <div class="overlay-symbol-up">&#10806;</div>
+      <img class="img-scale" src="images/cities/city3.jpg"></img>
+      <div class="trolldiv section-box-eleven">
+        <figure style="background-color:#69787A;">A night view of a city with a big dock of water.</figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6 padding-0">
+      <div class="overlay-symbol-up">&#10806;</div>
+      <img class="img-scale" src="images/cities/city4.jpg"></img>
+      <div class="trolldiv section-box-eleven">
+        <figure style="background-color:#ABC2C6;">A ship just passing a city of the lord of light.</figure>
+      </div>
+    </div>
+     <div class="col-lg-6 padding-0">
+      <div class="overlay-symbol-up">&#10806;</div>
+      <img class="img-scale" src="images/cities/city1.jpg"></img>
+      <div class="trolldiv section-box-eleven">
+        <figure style="background-color:#95AAAD;">America as usual, full of people through the day walking around.</figure>
+      </div>
+    </div>
+  </div>
+   
+  <div class="row">
+    <div class="col-lg-12 padding-0">
+      <div class="overlay-symbol-up">&#10806;</div>
+      <img class="img-scale" src="images/cities/city5.jpg"></img>
+      <div class="trolldiv section-box-eleven">
+        <figure style="background-color:#ABC2C6;padding-left:30px;padding-right:30px">Another picture of a high saturation pedestrian city. People in these cities usually walk or use public transportation. Very little people have access to cars because there is so little space to park.</figure>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
 
 
 </body>
