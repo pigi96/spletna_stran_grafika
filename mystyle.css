@@ -1,6 +1,8 @@
 .padding-0 {
     padding-right: 0;
     padding-left: 0;
+    padding-top: 0;
+    padding-bot: 0;
 }
 
 .nomargin {
@@ -55,6 +57,19 @@ body {
   position: relative;
 }
 
+#overlay-back {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    width      : 100%;
+    height     : 100%;
+    background : #000;
+    opacity    : 0.6;
+    filter     : alpha(opacity=60);
+    z-index    : 5;
+    display    : none;
+}
+
 .overlay {
   height: 100%;
   width: 0;
@@ -66,6 +81,7 @@ body {
   background-color: rgba(255,255,255, 1);
   overflow-x: hidden;
   transition: 0.5s;
+  z-index: 20;
 }
 
 .overlay-content {
@@ -106,11 +122,12 @@ body {
 }
 
 #scroller {
-    position: relative;
+    position: fixed;
     top: 0;
     width: 100%;
     background: rgb(0, 0, 0, 0.15);
     height: 50px;
+    z-index: 10;
 }
 
 .product-holder {
@@ -132,5 +149,56 @@ body {
   height: 5%;
   top: 5%;
   left: 50%;*/
-  /*transform: translate(-50%, -50%);*/
+  transform: translate(-50%, -50%);
+}
+
+.post-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    opacity: 0.5;
+    top:0;
+    left:0;
+    position: absolute;
+}
+
+.bottom-centered {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+}
+
+.container-placeholder {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    h5 {
+        font-size: 2.3em;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    h5 {
+        font-size: 3em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    h5 {
+        font-size: 4em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    h5 {
+        font-size: 5em;
+    }
 }
