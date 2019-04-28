@@ -33,7 +33,6 @@
         position: relative;
         overflow: hidden;
         z-index: 1;
-
     }
 
 .section-box-eleven figure {
@@ -48,8 +47,8 @@
     font-family: "Comic Sans MS";
     text-align: center;
     padding-top: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .section-box-eleven:hover figure {
@@ -59,11 +58,17 @@
 
 .overlay-symbol-up {
   position: absolute;
-  width: 50%;
+  width: 100%;
   height: 10%;
-  transform: translate(100%, 745%);
+  transform: translate(0%, 745%);
+  text-align: center;
   color: white;
   font-size: 50px;
+}
+
+.padding-text-over-image {
+  padding-left: 30%;
+  padding-right: 20%;
 }
 
 .trolldiv {
@@ -218,10 +223,6 @@ h5 {
 @media screen and (max-width: 767px) {
     h5 {
         font-size: 2.3em;
-    }
-
-    overlay-symbol-up {
-      font-size: 2.3em;
     }
 }
 
