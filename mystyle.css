@@ -2,7 +2,7 @@
     padding-right: 0;
     padding-left: 0;
     padding-top: 0;
-    padding-bot: 0;
+    padding-bottom: 0;
 }
 
 .nomargin {
@@ -33,6 +33,7 @@
         position: relative;
         overflow: hidden;
         z-index: 1;
+
     }
 
 .section-box-eleven figure {
@@ -44,25 +45,25 @@
     background-color: #659DBD;
     border-top: 0px solid #000;
     z-index: 1;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .section-box-eleven:hover figure {
     bottom: -20%;
     z-index: 3;
-    font-family: "Helvetica";
-    padding-top: 5px;
-    padding-left: 100px;
-    padding-right: 100px;
-    text-align: center;
 }
 
 .overlay-symbol-up {
   position: absolute;
   width: 50%;
   height: 10%;
-  transform: translate(100%, 750%);
-  color: #DDE5D3;
-  font-size: 30px;
+  transform: translate(100%, 745%);
+  color: white;
+  font-size: 50px;
 }
 
 .trolldiv {
@@ -209,10 +210,18 @@ body {
   text-align: center;
 }
 
+h5 {
+  font-family: "Arial Black";
+}
+
 /* xs < 768 */
 @media screen and (max-width: 767px) {
     h5 {
         font-size: 2.3em;
+    }
+
+    overlay-symbol-up {
+      font-size: 2.3em;
     }
 }
 
